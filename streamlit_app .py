@@ -43,22 +43,6 @@ if st.button('Forecast'):
     predict_df=future_df.tail(months+72)
     
     st.line_chart(predict_df, y=['FORECAST'], use_container_width=True)
-    '''forecast_only = predict_df[predict_df['FORECAST'].notna()]
-
-    fig, ax = plt.subplots(figsize=(16, 8))
     
-    # plot forecast
-    ax.plot(forecast_only.index, forecast_only['FORECAST'], color='orange', label='Forecast')
-    
-    # set y-axis from 6000 upwards in steps of 1000
-    ax.set_ylim(6000, forecast_only['FORECAST'].max() + 1000)
-    ax.set_yticks(np.arange(6000, forecast_only['FORECAST'].max() + 2000, 1000))
-    
-    ax.set_title("Insurance Claims Forecast", fontsize=18)
-    ax.set_xlabel("Date")
-    ax.set_ylabel("Claim Amount")
-    ax.legend()
-
-    st.pyplot(fig)'''
 
 
