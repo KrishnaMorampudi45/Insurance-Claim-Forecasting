@@ -17,7 +17,8 @@ st.write(
 )
 
 # Get the current credentials
-session = get_active_session()
+cnx=st.connection('snowflake')
+session=cnx.session()
 months=st.number_input('Enter the number of months to predict',min_value=6)
 df=session.sql('select * from CLAIM_DATA')
 df=df.to_pandas()
