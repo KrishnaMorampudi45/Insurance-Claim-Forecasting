@@ -42,8 +42,8 @@ if st.button('Forecast'):
     #st.write(future_df)
     predict_df=future_df.tail(months+72)
     
-    #st.line_chart(predict_df, y=['FORECAST'], use_container_width=True)
-    forecast_only = predict_df[predict_df['FORECAST'].notna()]
+    st.line_chart(predict_df, y=['FORECAST'], use_container_width=True)
+    '''forecast_only = predict_df[predict_df['FORECAST'].notna()]
 
     fig, ax = plt.subplots(figsize=(16, 8))
     
@@ -59,6 +59,6 @@ if st.button('Forecast'):
     ax.set_ylabel("Claim Amount")
     ax.legend()
 
-    st.pyplot(fig)
+    st.pyplot(fig)'''
 
 
