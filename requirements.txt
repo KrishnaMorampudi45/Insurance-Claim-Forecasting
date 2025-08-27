@@ -1,0 +1,7 @@
+snowflake-snowpark-python
+streamlit
+matplotlib
+pandas
+numpy
+statsmodels
+pickle
