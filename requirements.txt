@@ -1,7 +1,7 @@
-snowflake-snowpark-python
-streamlit
-matplotlib
-pandas
-numpy
-statsmodels
-pickle
+  snowflake-snowpark-python
+  streamlit
+  matplotlib
+  pandas
+  numpy
+  statsmodels
+  pickle
